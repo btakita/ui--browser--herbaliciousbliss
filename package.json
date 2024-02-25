@@ -1,0 +1,46 @@
+{
+	"name": "@btakita/ui--browser--herbaliciousbliss",
+	"type": "module",
+	"version": "0.0.0",
+	"description": "UI library targeting the any environment for herbaliciousbliss",
+	"keywords": [
+		"rappstack",
+		"reactive",
+		"full-stack",
+		"domain",
+		"isomorphic",
+		"server",
+		"herbaliciousbliss"
+	],
+	"homepage": "https://github.com/btakita/ui--browser--herbaliciousbliss",
+	"bugs": {
+		"url": "https://github.com/btakita/ui--browser--herbaliciousbliss/issues"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/btakita/ui--browser--herbaliciousbliss.git"
+	},
+	"license": "Apache-2.0",
+	"author": "Brian Takita",
+	"types": "index.ts",
+	"exports": {
+		".": "./index.ts",
+		"./layout": "./layout/index.ts",
+		"./package.json": "./package.json"
+	},
+	"files": [
+		"*.d.ts",
+		"*.js",
+		"*.json",
+		"layout"
+	],
+	"dependencies": {
+		"ctx-core": "^6.5.0"
+	},
+	"devDependencies": {
+		"bun-types": "latest"
+	},
+	"peerDependencies": {
+		"typescript": "^5.3.3"
+	}
+}
