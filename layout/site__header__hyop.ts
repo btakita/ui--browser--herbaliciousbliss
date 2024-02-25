@@ -2,7 +2,7 @@ export function site__header__hyop(site__header:HTMLElement) {
 	let is_active = false
 	const navlinks = site__header.querySelector('#navlinks')!
 	const hamburger = site__header.querySelector('#hamburger')!
-	const layer = site__header.querySelector('#navLayer')!
+	const layer = site__header.querySelector('#nav_layer')!
 	const links = [...navlinks.querySelector('ul')!.children]
 	hamburger.addEventListener('click', ()=>{
 		is_active = !is_active
