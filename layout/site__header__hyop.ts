@@ -25,9 +25,14 @@ export function site__header__navlinks_link__hyop(navlinks_link:HTMLElement) {
 		is_active__toggle(ctx)
 	})
 }
-export function site__header__navlinks_login__close__hyop(navlinks_login__close:HTMLElement) {
+export function site__header__navlinks_login__back__hyop(navlinks_login__close:HTMLElement) {
 	navlinks_login__close.addEventListener('click', evt=>{
 		navlinks_menu__open(browser_ctx__ensure())
+	})
+}
+export function site__header__navlinks_login__close__hyop(navlinks_login__close:HTMLElement) {
+	navlinks_login__close.addEventListener('click', evt=>{
+		is_active__set(browser_ctx__ensure(), false)
 	})
 }
 export function site__header__account__button__hyop(account__div:HTMLDivElement) {
