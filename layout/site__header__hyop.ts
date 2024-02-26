@@ -30,7 +30,7 @@ export function site__header__navlinks_login__close__hyop(navlinks_login__close:
 		navlinks_menu__open(browser_ctx__ensure())
 	})
 }
-export function site__header__account__div__hyop(account__div:HTMLDivElement) {
+export function site__header__account__button__hyop(account__div:HTMLDivElement) {
 	const ctx = browser_ctx__ensure()
 	account__div.addEventListener('click', ()=>{
 		is_active__set(ctx, true)
