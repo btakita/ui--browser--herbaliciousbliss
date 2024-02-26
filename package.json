@@ -38,6 +38,7 @@
 		"ctx-core": "^6.5.0"
 	},
 	"devDependencies": {
+		"@types/gapi.auth2": "^0.0.60",
 		"bun-types": "latest"
 	},
 	"peerDependencies": {

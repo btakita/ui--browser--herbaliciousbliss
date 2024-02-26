@@ -1,3 +1,4 @@
+/// <reference types="@types/gapi.auth2" />
 import { browser_ctx__ensure } from '@rappstack/domain--browser/ctx'
 import { be_sig_triple_, memo_, type wide_ctx_T } from 'ctx-core/rmemo'
 export function site__header__nav_layer__hyop(nav_layer:HTMLElement) {
