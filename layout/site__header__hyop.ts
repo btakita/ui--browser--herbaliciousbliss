@@ -39,7 +39,11 @@ export function site__header__navlinks_login__close__hyop(navlinks_login__close:
 export function site__header__account__button__hyop(account__div:HTMLDivElement) {
 	const ctx = browser_ctx__ensure()
 	account__div.addEventListener('click', ()=>{
-		is_active__set(ctx, true)
+		if (account__div.dataset.is_active__toggle) {
+			is_active__toggle(ctx)
+		} else {
+			is_active__set(ctx, true)
+		}
 		navlinks_login__open(ctx)
 	})
 }
