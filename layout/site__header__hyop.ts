@@ -63,18 +63,20 @@ const [, menu_handle_, menu_handle__set] = be_sig_triple_<HTMLElement|undefined>
 	()=>undefined)
 const [, nav_layer_, nav_layer__set] = be_sig_triple_<HTMLElement|undefined>(()=>undefined)
 const [, is_active_, is_active__set] = be_sig_triple_(
-	()=>false
-).add((ctx, is_active$)=>memo_(()=>{
-	if (is_active$()) {
-		navlinks_(ctx)!.classList.add('!visible', '!scale-100', '!opacity-100', '!lg:translate-y-0')
-		menu_handle_(ctx)!.classList.add('active')
-		nav_layer_(ctx)!.classList.add('origin-top', 'scale-y-100')
-	} else {
-		navlinks_(ctx)!.classList.remove('!visible', '!scale-100', '!opacity-100', '!lg:translate-y-0')
-		menu_handle_(ctx)!.classList.remove('active')
-		nav_layer_(ctx)!.classList.remove('origin-top', 'scale-y-100')
-	}
-}))
+	()=>false,
+	[
+		(ctx, is_active$)=>memo_(()=>{
+			if (is_active$()) {
+				navlinks_(ctx)!.classList.add('!visible', '!scale-100', '!opacity-100', '!lg:translate-y-0')
+				menu_handle_(ctx)!.classList.add('active')
+				nav_layer_(ctx)!.classList.add('origin-top', 'scale-y-100')
+			} else {
+				navlinks_(ctx)!.classList.remove('!visible', '!scale-100', '!opacity-100', '!lg:translate-y-0')
+				menu_handle_(ctx)!.classList.remove('active')
+				nav_layer_(ctx)!.classList.remove('origin-top', 'scale-y-100')
+			}
+		})
+	])
 function is_active__toggle(ctx:wide_ctx_T) {
 	is_active__set(ctx, !is_active_(ctx))
 }
