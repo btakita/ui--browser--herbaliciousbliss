@@ -35,13 +35,13 @@
 		"layout"
 	],
 	"dependencies": {
-		"ctx-core": "^7.1.4"
+		"ctx-core": "^7.1.5"
 	},
 	"devDependencies": {
 		"@types/gapi.auth2": "^0.0.60",
 		"bun-types": "latest"
 	},
 	"peerDependencies": {
-		"typescript": "^5.4.4"
+		"typescript": "^5.4.5"
 	}
 }
